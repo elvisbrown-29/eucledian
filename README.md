@@ -27,7 +27,7 @@ git clone https://github.com/elvisbrown-29/euclidean.git
 
 2. Navigate to the project directory:
 ```bash
-cd euclidean-gcd-calculator
+cd euclidean
 ```
 
 3. Open `index.html` in your web browser or use a local development server.
