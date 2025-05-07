@@ -22,7 +22,7 @@ A web-based calculator that computes the Greatest Common Divisor (GCD) of two nu
 
 1. Clone this repository or download the files:
 ```bash
-git clone https://github.com/yourusername/euclidean-gcd-calculator.git
+git clone https://github.com/elvisbrown-29/euclidean.git
 ```
 
 2. Navigate to the project directory:
@@ -47,7 +47,7 @@ The Euclidean Algorithm is based on the principle that the greatest common divis
 ## File Structure
 
 ```
-euclidean-gcd-calculator/
+euclidean/
 ├── index.html
 ├── styles.css
 ├── script.js
