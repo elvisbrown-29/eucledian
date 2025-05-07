@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euclidean Algorithm GCD Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <header>
+            <h1>Euclidean Algorithm GCD Calculator</h1>
+            <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                <span class="toggle-icon">🌙</span>
+            </button>
+        </header>
+
+        <div class="explanation">
+            <h2>What is the Euclidean Algorithm?</h2>
+            <p>
+                The Euclidean Algorithm is an efficient method for computing the greatest common divisor (GCD) of two integers.
+                The GCD is the largest positive integer that divides both numbers without a remainder.
+            </p>
+            <p>
+                The algorithm works by repeatedly applying the division algorithm and using the fact that:
+                gcd(a, b) = gcd(b, a mod b) until a mod b = 0.
+            </p>
+        </div>
+
+        <div class="calculator">
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="number1">First Number:</label>
+                    <input type="number" id="number1" min="1" placeholder="Enter a positive integer">
+                </div>
+                <div class="input-field">
+                    <label for="number2">Second Number:</label>
+                    <input type="number" id="number2" min="1" placeholder="Enter a positive integer">
+                </div>
+            </div>
+            <button id="calculate-btn">Calculate GCD</button>
+        </div>
+
+        <div class="results">
+            <div id="steps-container" class="hidden">
+                <h2>Steps:</h2>
+                <div id="steps"></div>
+            </div>
+            <div id="result-container" style="display: flex;" class="hidden">
+               
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Created by Elvis Brown | <span id="current-year"></span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
